@@ -1,5 +1,5 @@
 # DENcrypt
-#### **v.0.1.0**
+#### **v.0.1.1**
 
 Módulo criado com o objetivo de facilitar a criptografia/descriptografia de textos e arquivos.
 

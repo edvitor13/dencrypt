@@ -1,4 +1,4 @@
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 __author__ = 'Vitor Gabriel <edvitor13@hotmail.com>'
 __date__ = '2021-10-25'
 __lang__ = 'pt-br'
