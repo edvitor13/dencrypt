@@ -17,6 +17,7 @@ Utiliza como base as criptografias:
 # Requisitos
 
 ```python
+python = "^3.9"
 rsa = "^4.7.2"
 cryptography = "^35.0.0"
 ```
@@ -26,7 +27,7 @@ cryptography = "^35.0.0"
 # Instalação
 
 ```
-pip install git+https://github.com/edvitor13/dencrypt.git
+pip install dencrypt
 ```
 
 
