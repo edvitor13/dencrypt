@@ -62,16 +62,16 @@ cr.symmetrickey # b'KqqI5Ncke0TSzBJFrE0SM3xuHz11tv689A1PhmkewkE='
 # 1.1. Salvando arquivos das chaves
 cr.save_all_keys(location="keys/")
 ```
-```
+```diff
 exemplo/
 ├─ arquivos/
    ├─ dados1.txt
    ├─ dados2.csv
 ├─ arquivos-crip/
 ├─ keys/
-   ├─ privatekey.key
-   ├─ publickey.key
-   ├─ symmetrickey.key
++  ├─ privatekey.key
++  ├─ publickey.key
++  ├─ symmetrickey.key
 ├─ main.py
 ```
 ```python
@@ -89,14 +89,14 @@ encr.save("arquivos-crip/dados1.txt.dencrypt")
 encr = EncryptFile("arquivos/dados2.csv", key="keys/symmetrickey.key")
 encr.save("arquivos-crip/dados2.csv.dencrypt")
 ```
-```
+```diff
 exemplo/
 ├─ arquivos/
    ├─ dados1.txt
    ├─ dados2.csv
 ├─ arquivos-crip/
-   ├─ dados1.txt.dencrypt
-   ├─ dados2.csv.dencrypt
++  ├─ dados1.txt.dencrypt
++  ├─ dados2.csv.dencrypt
 ├─ keys/
    ├─ privatekey.key
    ├─ publickey.key
@@ -108,9 +108,9 @@ exemplo/
 encr = Encrypt("keys/symmetrickey.key", pubkey="keys/publickey.key")
 encr.save("arquivos-crip/secreta.key")
 ```
-```
+```diff
 ├─ arquivos-crip/
-   ├─ secreta.key
++  ├─ secreta.key
    ├─ dados1.txt.dencrypt
    ├─ dados2.csv.dencrypt
 ```
@@ -129,16 +129,16 @@ decr.save("arquivos-crip/dados1.txt")
 decr = DecryptFile("arquivos-crip/dados2.csv.dencrypt", key=skey)
 decr.save("arquivos-crip/dados2.csv")
 ```
-```
+```diff
 exemplo/
 ├─ arquivos/
    ├─ dados1.txt
    ├─ dados2.csv
 ├─ arquivos-crip/
    ├─ secreta.key
-   ├─ dados1.txt
++  ├─ dados1.txt
    ├─ dados1.txt.dencrypt
-   ├─ dados2.csv
++  ├─ dados2.csv
    ├─ dados2.csv.dencrypt
 ├─ keys/
    ├─ privatekey.key
